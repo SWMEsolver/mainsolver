@@ -115,5 +115,10 @@ The input file contains relevant information to run the specific example which c
 
 The output data is created in the example folder. The solution is written in a sequence of ".dat" files with the following format **soln** followed by an integer which is the number of saved solution, and either **_1D** or **_2D** depending if the simulation is in one or two spatial dimensions, respectively. For instance, **soln3_1D.dat** corresponds to the third saved solution of a one dimensional model. The time points related to the sequence of saved solutions are saved in the file **timepoints.dat**. A file called **information.txt** containing relevant information of the computed simulation is also created at the example folder. Finally, when an exact solution is available, the $`L^1`$-error of each saved snapshot are created in a subfolder called *Error*.
 
+## Collaborators
 
+This Fortran solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) with the collaboration of:
+**Mirco Ciallella**, **Julian Koellermeier**, **Afroja Parvin** and **Rik Verbiest**. The main structure of the code, including the makefile and a number of subroutines in this code were based on the shallow water solver fv-solver-sw (https://github.com/jbnunezd/fv-solver-sw). 
+
+## Papers:
 
