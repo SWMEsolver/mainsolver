@@ -91,7 +91,7 @@ The modules and subroutines called by this program are:
 - ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
  
    $\quad\bullet$ $\color{blue}\texttt{Current 1D models:}$<br>
-   $\qquad\diamond$ Shallow water equations (SWE)<br>   
+   $\qquad\diamond$ Shallow water equations (SWE)<br>
    $\qquad\bullet$ Shallow water moment equations (SWME)<br>
    $\qquad\bullet$ Shallow water linearized moment equations (SWLME)<br>
    $\qquad\bullet$ Hyperbolic SWME (HSWME)<br>
