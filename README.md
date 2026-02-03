@@ -92,44 +92,44 @@ The modules and subroutines called by this program are:
  
    $\quad\bullet$ $\color{blue}\texttt{Current 1D models:}$<br>
    $\qquad\diamond$ Shallow water equations (SWE)<br>
-   $\qquad\bullet$ Shallow water moment equations (SWME)<br>
-   $\qquad\bullet$ Shallow water linearized moment equations (SWLME)<br>
-   $\qquad\bullet$ Hyperbolic SWME (HSWME)<br>
-   $\qquad\bullet$ Inclined HSWME<br>
-   $\qquad\bullet$ Beta hyperbolic SWME (HSWME)<br>
-   $\qquad\bullet$ Moment regularization for hyperbolic SWME (MHSWME)<br>
-   $\qquad\bullet$ Primitive regularization for hyperbolic SWME (PHSWME)<br>
-   $\qquad\bullet$ Primitive moment regularization for hyperbolic SWME (PMHSWME)<br>
+   $\qquad\diamond$ Shallow water moment equations (SWME)<br>
+   $\qquad\diamond$ Shallow water linearized moment equations (SWLME)<br>
+   $\qquad\diamond$ Hyperbolic SWME (HSWME)<br>
+   $\qquad\diamond$ Inclined HSWME<br>
+   $\qquad\diamond$ Beta hyperbolic SWME (HSWME)<br>
+   $\qquad\diamond$ Moment regularization for hyperbolic SWME (MHSWME)<br>
+   $\qquad\diamond$ Primitive regularization for hyperbolic SWME (PHSWME)<br>
+   $\qquad\diamond$ Primitive moment regularization for hyperbolic SWME (PMHSWME)<br>
 
    $\quad\bullet$ $\color{blue}\texttt{Friction models:}$<br>
-   $\qquad\bullet$ Newtonian slip<br>
-   $\qquad\bullet$ Newtonian Manning<br>
-   $\qquad\bullet$ Coulomb type<br>
-   $\qquad\bullet$ Granular<br>
-   $\qquad\bullet$ Savage Hutter<br>
+   $\qquad\diamond$ Newtonian slip<br>
+   $\qquad\diamond$ Newtonian Manning<br>
+   $\qquad\diamond$ Coulomb type<br>
+   $\qquad\diamond$ Granular<br>
+   $\qquad\diamond$ Savage Hutter<br>
    
    $\quad\bullet$ $\color{blue}\texttt{FVM schemes:}$<br>
-   $\qquad\bullet$ Path intergals with: Linear, Quadratic or Power law paths<br>
-   $\qquad\bullet$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
+   $\qquad\diamond$ Path intergals with: Linear, Quadratic or Power law paths<br>
+   $\qquad\diamond$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
    
    $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$<br>
-   $\qquad\bullet$ Forward Euler<br>
-   $\qquad\bullet$ SSPRK4<br>
-   $\qquad\bullet$ RK65<br>
-   $\qquad\bullet$ Alternative implicit solver for the source term (Nonlinear solver)<br>
+   $\qquad\diamond$ Forward Euler<br>
+   $\qquad\diamond$ SSPRK4<br>
+   $\qquad\diamond$ RK65<br>
+   $\qquad\diamond$ Alternative implicit solver for the source term (Nonlinear solver)<br>
 
    $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$<br>
-   $\qquad\bullet$ Periodic<br>
-   $\qquad\bullet$ Transmissive<br>
-   $\qquad\bullet$ Inflow<br>
-   $\qquad\bullet$ Outflow<br>
-   $\qquad\bullet$ Reflecting<br>
+   $\qquad\diamond$ Periodic<br>
+   $\qquad\diamond$ Transmissive<br>
+   $\qquad\diamond$ Inflow<br>
+   $\qquad\diamond$ Outflow<br>
+   $\qquad\diamond$ Reflecting<br>
 
    $\quad\bullet$ $\color{blue}\texttt{Partially available (under development)}$<br>
-   $\qquad\bullet$ Fully 2D problems<br>
-   $\qquad\bullet$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
-   $\qquad\bullet$ Riemann solver for conservative fluxes<br>
-   $\qquad\bullet$ Polynomial reconstructions<br>
+   $\qquad\diamond$ Fully 2D problems<br>
+   $\qquad\diamond$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
+   $\qquad\diamond$ Riemann solver for conservative fluxes<br>
+   $\qquad\diamond$ Polynomial reconstructions<br>
    
   
 - ***physicsframe.f90*** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
