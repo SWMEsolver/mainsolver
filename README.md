@@ -156,7 +156,7 @@ The output data is created in the example folder. The solution is written in a s
 
 ## Authorship
 
-This Fortran solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) with the collaboration of:
+This Fortran solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) with the partial collaboration of:
 **Mirco Ciallella**, **Julian Koellermeier**, **Afroja Parvin** and **Rik Verbiest**. The main structure of the code, including the makefile and a number of subroutines in this program were partially based on the shallow water solver fv-solver-sw (https://github.com/jbnunezd/fv-solver-sw). 
 
 ## Papers:
