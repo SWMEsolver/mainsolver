@@ -91,45 +91,45 @@ The modules and subroutines called by this program are:
 - ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
  
    $\quad\bullet$ $\color{blue}\texttt{Current 1D models:}$<br>
-   $\qquad\bullet$ Shallow water equations (SWE)<br>   
+   $\qquad\bullet$ Shallow water equations (SWE)<br>
    $\qquad\bullet$ Shallow water moment equations (SWME)<br>
    $\qquad\bullet$ Shallow water linearized moment equations (SWLME)<br>
    $\qquad\bullet$ Hyperbolic SWME (HSWME)<br>
    $\qquad\bullet$ Inclined HSWME<br>
    $\qquad\bullet$ Beta hyperbolic SWME (HSWME)<br>
-   $\qquad\bullet$ Moment regularization for hyperbolic SWME (MHSWME)
-   $\qquad\bullet$ Primitive regularization for hyperbolic SWME (PHSWME)
-   $\qquad\bullet$ Primitive moment regularization for hyperbolic SWME (PMHSWME)
+   $\qquad\bullet$ Moment regularization for hyperbolic SWME (MHSWME)<br>
+   $\qquad\bullet$ Primitive regularization for hyperbolic SWME (PHSWME)<br>
+   $\qquad\bullet$ Primitive moment regularization for hyperbolic SWME (PMHSWME)<br>
 
-   $\quad\bullet$ $\color{blue}\texttt{Friction models:}$
-   $\qquad\bullet$ Newtonian slip
-   $\qquad\bullet$ Newtonian Manning
-   $\qquad\bullet$ Coulomb type
-   $\qquad\bullet$ Granular
-   $\qquad\bullet$ Savage Hutter
+   $\quad\bullet$ $\color{blue}\texttt{Friction models:}$<br>
+   $\qquad\bullet$ Newtonian slip<br>
+   $\qquad\bullet$ Newtonian Manning<br>
+   $\qquad\bullet$ Coulomb type<br>
+   $\qquad\bullet$ Granular<br>
+   $\qquad\bullet$ Savage Hutter<br>
    
-   $\quad\bullet$ $\color{blue}\texttt{FVM schemes:}$
-   $\qquad\bullet$ Path intergals with: Linear, Quadratic or Power law paths
-   $\qquad\bullet$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL
+   $\quad\bullet$ $\color{blue}\texttt{FVM schemes:}$<br>
+   $\qquad\bullet$ Path intergals with: Linear, Quadratic or Power law paths<br>
+   $\qquad\bullet$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
    
-   $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$
-   $\qquad\bullet$ Forward Euler
-   $\qquad\bullet$ SSPRK4
-   $\qquad\bullet$ RK65
-   $\qquad\bullet$ Alternative implicit solver for the source term (Nonlinear solver)
+   $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$<br>
+   $\qquad\bullet$ Forward Euler<br>
+   $\qquad\bullet$ SSPRK4<br>
+   $\qquad\bullet$ RK65<br>
+   $\qquad\bullet$ Alternative implicit solver for the source term (Nonlinear solver)<br>
 
-   $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$
-   $\qquad\bullet$ Periodic
-   $\qquad\bullet$ Transmissive
-   $\qquad\bullet$ Inflow
-   $\qquad\bullet$ Outflow
-   $\qquad\bullet$ Reflecting
+   $\quad\bullet$ $\color{blue}\texttt{Time integrators:}$<br>
+   $\qquad\bullet$ Periodic<br>
+   $\qquad\bullet$ Transmissive<br>
+   $\qquad\bullet$ Inflow<br>
+   $\qquad\bullet$ Outflow<br>
+   $\qquad\bullet$ Reflecting<br>
 
-   $\quad\bullet$ $\color{blue}\texttt{Partially available (under development)}$
-   $\qquad\bullet$ Fully 2D problems
-   $\qquad\bullet$ Eigen value method (upwind) for the approximation of the linearized Roe matrix
-   $\qquad\bullet$ Riemann solver for conservative fluxes
-   $\qquad\bullet$ Polynomial reconstructions
+   $\quad\bullet$ $\color{blue}\texttt{Partially available (under development)}$<br>
+   $\qquad\bullet$ Fully 2D problems<br>
+   $\qquad\bullet$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
+   $\qquad\bullet$ Riemann solver for conservative fluxes<br>
+   $\qquad\bullet$ Polynomial reconstructions<br>
    
   
 - ***physicsframe.f90*** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
