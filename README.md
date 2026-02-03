@@ -89,46 +89,46 @@ The modules and subroutines called by this program are:
 
 - ***finitevolume_vars.f90*** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): In this module the majority of the global variables used throughout the many subroutines are defined. It also includes variables that are allocated in further subroutines. This module is used in almost all subroutines of the program. 
 - ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
-  $\color{blue}\texttt{Current 1D models:}$
+   $\bullet$ $\color{blue}\texttt{Current 1D models:}$
    $\bullet$ Shallow water equations (SWE)
-   * Shallow water moment equations (SWME)
-   Shallow water linearized moment equations (SWLME)
-   Hyperbolic SWME (HSWME)
-   Inclined HSWME 
-   Beta hyperbolic SWME (HSWME)
-   Moment regularization for hyperbolic SWME (MHSWME)
-   Primitive regularization for hyperbolic SWME (PHSWME)
-   Primitive moment regularization for hyperbolic SWME (PMHSWME)
+   $\bullet$ Shallow water moment equations (SWME)
+   $\bullet$ Shallow water linearized moment equations (SWLME)
+   $\bullet$ Hyperbolic SWME (HSWME)
+   $\bullet$ Inclined HSWME 
+   $\bullet$ Beta hyperbolic SWME (HSWME)
+   $\bullet$ Moment regularization for hyperbolic SWME (MHSWME)
+   $\bullet$ Primitive regularization for hyperbolic SWME (PHSWME)
+   $\bullet$ Primitive moment regularization for hyperbolic SWME (PMHSWME)
 
-  $\color{blue}\texttt{Friction models:}$
-   Newtonian slip
-   Newtonian Manning
-   Coulomb type
-   Granular
-   Savage Hutter
+   $\bullet$ $\color{blue}\texttt{Friction models:}$
+   $\bullet$ Newtonian slip
+   $\bullet$ Newtonian Manning
+   $\bullet$ Coulomb type
+   $\bullet$ Granular
+   $\bullet$ Savage Hutter
    
-  $\color{blue}\texttt{FVM schemes:}$
-   Path intergals with: Linear, Quadratic or Power law paths
-   Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL
+   $\bullet$ $\color{blue}\texttt{FVM schemes:}$
+   $\bullet$ Path intergals with: Linear, Quadratic or Power law paths
+   $\bullet$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL
    
-  $\color{blue}\texttt{Time integrators:}$
-   Forward Euler
-   SSPRK4
-   RK65
-   Alternative implicit solver for the source term (Nonlinear solver)
+   $\bullet$ $\color{blue}\texttt{Time integrators:}$
+   $\bullet$ Forward Euler
+   $\bullet$ SSPRK4
+   $\bullet$ RK65
+   $\bullet$ Alternative implicit solver for the source term (Nonlinear solver)
 
-  $\color{blue}\texttt{Time integrators:}$
-   Periodic
-   Transmissive
-   Inflow
-   Outflow
-   Reflecting
+   $\bullet$ $\color{blue}\texttt{Time integrators:}$
+   $\bullet$ Periodic
+   $\bullet$ Transmissive
+   $\bullet$ Inflow
+   $\bullet$ Outflow
+   $\bullet$ Reflecting
 
-  $\color{blue}\texttt{Partially available (under development)}$
-   Fully 2D problems
-   Eigen value method (upwind) for the approximation of the linearized Roe matrix
-   Riemann solver for conservative fluxes
-   Polynomial reconstructions
+   $\bullet$ $\color{blue}\texttt{Partially available (under development)}$
+   $\bullet$ Fully 2D problems
+   $\bullet$ Eigen value method (upwind) for the approximation of the linearized Roe matrix
+   $\bullet$ Riemann solver for conservative fluxes
+   $\bullet$ Polynomial reconstructions
    
   
 - ***physicsframe.f90*** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
