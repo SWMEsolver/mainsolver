@@ -90,7 +90,7 @@ The modules and subroutines called by this program are:
 - ***finitevolume_vars.f90*** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): In this module the majority of the global variables used throughout the many subroutines are defined. It also includes variables that are allocated in further subroutines. This module is used in almost all subroutines of the program. 
 - ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
  
-   $\color{blue}\quad\bullet\texttt{ Current 1D models:}$<br>
+   $\color{blue}\quad\circ\texttt{ Current 1D models:}$<br>
    $\qquad\diamond$ Shallow water equations (SWE)<br>
    $\qquad\diamond$ Shallow water moment equations (SWME)<br>
    $\qquad\diamond$ Shallow water linearized moment equations (SWLME)<br>
@@ -101,31 +101,31 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Primitive regularization for hyperbolic SWME (PHSWME)<br>
    $\qquad\diamond$ Primitive moment regularization for hyperbolic SWME (PMHSWME)<br>
 
-   $\color{blue}\quad\bullet\texttt{ Friction models:}$<br>
+   $\color{blue}\quad\circ\texttt{ Friction models:}$<br>
    $\qquad\diamond$ Newtonian slip<br>
    $\qquad\diamond$ Newtonian Manning<br>
    $\qquad\diamond$ Coulomb type<br>
    $\qquad\diamond$ Granular<br>
    $\qquad\diamond$ Savage Hutter<br>
    
-   $\color{blue}\quad\bullet\texttt{ FVM schemes:}$<br>
+   $\color{blue}\quad\circ\texttt{ FVM schemes:}$<br>
    $\qquad\diamond$ Path intergals with: Linear, Quadratic or Power law paths<br>
    $\qquad\diamond$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
    
-   $\color{blue}\quad\bigcirc\texttt{ Time integrators:}$<br>
+   $\color{blue}\quad\circ\texttt{ Time integrators:}$<br>
    $\qquad\diamond$ Forward Euler<br>
    $\qquad\diamond$ SSPRK4<br>
    $\qquad\diamond$ RK65<br>
    $\qquad\diamond$ Alternative implicit solver for the source term (Nonlinear solver)<br>
 
-   $\color{blue}\quad\bullet\texttt{ Time integrators:}$<br>
+   $\color{blue}\quad\circ\texttt{ Time integrators:}$<br>
    $\qquad\diamond$ Periodic<br>
    $\qquad\diamond$ Transmissive<br>
    $\qquad\diamond$ Inflow<br>
    $\qquad\diamond$ Outflow<br>
    $\qquad\diamond$ Reflecting<br>
 
-   $\color{blue}\quad\bullet\texttt{ Partially available (under development)}$<br>
+   $\color{blue}\quad\circ\texttt{ Partially available (under development)}$<br>
    $\qquad\diamond$ Fully 2D problems<br>
    $\qquad\diamond$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
    $\qquad\diamond$ Riemann solver for conservative fluxes<br>
