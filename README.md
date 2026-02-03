@@ -125,11 +125,12 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Outflow<br>
    $\qquad\diamond$ Reflecting<br>
 
-   $\quad\bullet$ $\color{blue}\texttt{Partially available (under development)}$<br>
+   $\quad\bullet$ $\color{red}\texttt{Partially available (under development)}$<br>
    $\qquad\diamond$ Fully 2D problems<br>
    $\qquad\diamond$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
    $\qquad\diamond$ Riemann solver for conservative fluxes<br>
    $\qquad\diamond$ Polynomial reconstructions<br>
+   $\qquad\diamond$ Error routines<br>
    
   
 - ***physicsframe.f90*** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
