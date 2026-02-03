@@ -120,7 +120,7 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Inflow<br>
    $\qquad\diamond$ Outflow<br>
    $\qquad\diamond$ Reflecting<br>
-   $\color{red}\quad\circ\texttt{ Partially available (under development)}$<br>
+   $\color{red}\quad\circ\texttt{ Partially available (under development):}$<br>
    $\qquad\diamond$ Fully 2D problems<br>
    $\qquad\diamond$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
    $\qquad\diamond$ Riemann solver for conservative fluxes<br>
