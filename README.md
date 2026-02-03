@@ -90,8 +90,8 @@ The modules and subroutines called by this program are:
 - ***finitevolume_vars.f90*** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): In this module the majority of the global variables used throughout the many subroutines are defined. It also includes variables that are allocated in further subroutines. This module is used in almost all subroutines of the program. 
 - ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
   $\color{blue}\texttt{Current 1D models:}$
-   Shallow water equations (SWE)
-   Shallow water moment equations (SWME)
+   $\bullet$ Shallow water equations (SWE)
+   * Shallow water moment equations (SWME)
    Shallow water linearized moment equations (SWLME)
    Hyperbolic SWME (HSWME)
    Inclined HSWME 
