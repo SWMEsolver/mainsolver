@@ -87,8 +87,8 @@ The f90 containing the program and all modules are in the source folder *src*. T
 
 The modules and subroutines called by this program are:
 
-- ***finitevolume_vars.f90*** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): In this module the majority of the global variables used throughout the many subroutines are defined. It also includes variables that are allocated in further subroutines. This module is used in almost all subroutines of the program. 
-- ***parameters.f90*** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
+- **finitevolume_vars.f90** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): In this module the majority of the global variables used throughout the many subroutines are defined. It also includes variables that are allocated in further subroutines. This module is used in almost all subroutines of the program. 
+- **parameters.f90** (module $\color{teal}\texttt{MOD\\_Parameters}$): The purpose of this module is to read the input file, define parameters and set the pointers depending on the flags given at the input file.
  
    $\color{blue}\quad\circ\texttt{ Current 1D models:}$<br>
    $\qquad\diamond$ Shallow water equations (SWE)<br>
@@ -133,16 +133,16 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Error routines<br>
    
   
-- ***physicsframe.f90*** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
-- ***mesh.f90*** (module $\color{teal}\texttt{MOD\\_Mesh}$): All the information related to the mesh (for 1D or 2D horizontal domains) is created in this file, namely, the nodes, barycenters, normal and tangent vectors at the cell edges, define the Gauss quadrature rule, and the quadrature points on each cell used to compute high order integrals in the finite volume scheme. 
-- ***timediscretization.f90*** (module $\color{teal}\texttt{MOD\\_TimeDiscretization}$): Time integrators with one or several stages are defined in this module. On each method, each stage calls the subroutine FVSpaceIteration which performs the spatial approximation. 
-- ***finitevolume.f90*** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): The pricipal subroutine in this module is FVSpaceIteration, which contains the spatial loops and contains the numerical methods used to approximate the conservative flux, non-conservative fluctuations and explicit approach of the source term. This module also calls the corresponding matrices of the system and source vector from the module MOD_MomentModels.
-- ***reconstruction.f90*** (module $\color{teal}\texttt{MOD\\_Reconstruction}$): This module is dedicated to compute the high-order polynomial reconstructions at each cell edge of the mesh. A subroutine for slope limiters is also part of this module.
-- ***shocksindicator.f90*** (module $\color{teal}\texttt{MOD\\_ShocksIndicator}$): Is used to identify the cells in which a shock occurs.
-- ***momentmodels.f90*** (module $\color{teal}\texttt{MOD\\_MomentModels}$): The system matrix $`\boldsymbol{A}`$ and remaining matrix $`\boldsymbol{B}`$, as well as the conservative flux $`\boldsymbol{F}`$ and source vector $`\boldsymbol{S}`$ are defined in this module. 
-- ***nonlinearsolver.f90*** (module $\color{teal}\texttt{MOD\\_NonlinearSolver}$): The Newton-Raphson solver is implemented in this module to solve the source term by means of an implicit scheme in an splitting procedure.
-- ***output.f90*** (module $\color{teal}\texttt{MOD\\_Output}$): Dedicated to write the solution, mesh and bathymetry to ".dat" files.
-- ***mytests.f90*** (module $\color{teal}\texttt{MOD\\_MyTests}$): This module is created for testing new subroutines on any of the modules of the program. It can be called from any of the subroutines or the main program. Module for developing purposes only.
+- **physicsframe.f90** (module $\color{teal}\texttt{MOD\\_PhysicsFrame}$): Is where the initial and boundary conditions are defined, as well as the bathymetry function (and its derivative) and the two auxiliary subroutines for converting variables from conservative to primitive (subroutine ConsToPrim) and from primitive to conservative (subroutine PrimToCons). 
+- **mesh.f90** (module $\color{teal}\texttt{MOD\\_Mesh}$): All the information related to the mesh (for 1D or 2D horizontal domains) is created in this file, namely, the nodes, barycenters, normal and tangent vectors at the cell edges, define the Gauss quadrature rule, and the quadrature points on each cell used to compute high order integrals in the finite volume scheme. 
+- **timediscretization.f90** (module $\color{teal}\texttt{MOD\\_TimeDiscretization}$): Time integrators with one or several stages are defined in this module. On each method, each stage calls the subroutine FVSpaceIteration which performs the spatial approximation. 
+- **finitevolume.f90** (module $\color{teal}\texttt{MOD\\_FiniteVolume}$): The pricipal subroutine in this module is FVSpaceIteration, which contains the spatial loops and contains the numerical methods used to approximate the conservative flux, non-conservative fluctuations and explicit approach of the source term. This module also calls the corresponding matrices of the system and source vector from the module MOD_MomentModels.
+- **reconstruction.f90** (module $\color{teal}\texttt{MOD\\_Reconstruction}$): This module is dedicated to compute the high-order polynomial reconstructions at each cell edge of the mesh. A subroutine for slope limiters is also part of this module.
+- **shocksindicator.f90** (module $\color{teal}\texttt{MOD\\_ShocksIndicator}$): Is used to identify the cells in which a shock occurs.
+- **momentmodels.f90** (module $\color{teal}\texttt{MOD\\_MomentModels}$): The system matrix $`\boldsymbol{A}`$ and remaining matrix $`\boldsymbol{B}`$, as well as the conservative flux $`\boldsymbol{F}`$ and source vector $`\boldsymbol{S}`$ are defined in this module. 
+- **nonlinearsolver.f90** (module $\color{teal}\texttt{MOD\\_NonlinearSolver}$): The Newton-Raphson solver is implemented in this module to solve the source term by means of an implicit scheme in an splitting procedure.
+- **output.f90** (module $\color{teal}\texttt{MOD\\_Output}$): Dedicated to write the solution, mesh and bathymetry to ".dat" files.
+- **mytests.f90** (module $\color{teal}\texttt{MOD\\_MyTests}$): This module is created for testing new subroutines on any of the modules of the program. It can be called from any of the subroutines or the main program. Module for developing purposes only.
 
 
 ## Running the program
