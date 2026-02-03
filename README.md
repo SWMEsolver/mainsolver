@@ -100,31 +100,26 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Moment regularization for hyperbolic SWME (MHSWME)<br>
    $\qquad\diamond$ Primitive regularization for hyperbolic SWME (PHSWME)<br>
    $\qquad\diamond$ Primitive moment regularization for hyperbolic SWME (PMHSWME)<br>
-
    $\color{blue}\quad\circ\texttt{ Friction models:}$<br>
    $\qquad\diamond$ Newtonian slip<br>
    $\qquad\diamond$ Newtonian Manning<br>
    $\qquad\diamond$ Coulomb type<br>
    $\qquad\diamond$ Granular<br>
-   $\qquad\diamond$ Savage Hutter<br>
-   
+   $\qquad\diamond$ Savage Hutter<br>   
    $\color{blue}\quad\circ\texttt{ FVM schemes:}$<br>
    $\qquad\diamond$ Path intergals with: Linear, Quadratic or Power law paths<br>
    $\qquad\diamond$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
-   
    $\color{blue}\quad\circ\texttt{ Time integrators:}$<br>
    $\qquad\diamond$ Forward Euler<br>
    $\qquad\diamond$ SSPRK4<br>
    $\qquad\diamond$ RK65<br>
    $\qquad\diamond$ Alternative implicit solver for the source term (Nonlinear solver)<br>
-
    $\color{blue}\quad\circ\texttt{ Time integrators:}$<br>
    $\qquad\diamond$ Periodic<br>
    $\qquad\diamond$ Transmissive<br>
    $\qquad\diamond$ Inflow<br>
    $\qquad\diamond$ Outflow<br>
    $\qquad\diamond$ Reflecting<br>
-
    $\color{red}\quad\circ\texttt{ Partially available (under development)}$<br>
    $\qquad\diamond$ Fully 2D problems<br>
    $\qquad\diamond$ Eigen value method (upwind) for the approximation of the linearized Roe matrix<br>
