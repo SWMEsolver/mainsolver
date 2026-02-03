@@ -105,7 +105,7 @@ The modules and subroutines called by this program are:
    $\qquad\diamond$ Newtonian Manning<br>
    $\qquad\diamond$ Coulomb type<br>
    $\qquad\diamond$ Granular<br>
-   $\qquad\diamond$ Savage Hutter<br>   
+   $\qquad\diamond$ Savage Hutter<br>
    $\color{blue}\quad\circ\texttt{ FVM schemes:}$<br>
    $\qquad\diamond$ Path intergals with: Linear, Quadratic or Power law paths<br>
    $\qquad\diamond$ Viscosity matrices: Lax-Friedrichs, Lax Wendroff, Force (Price-C), HLL<br>
