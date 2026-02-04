@@ -11,7 +11,7 @@ The benchmark partial differential equation (PDE), in the one-dimensional case, 
 ```
 where $`t>0`$ is time, $`x`$ is the spatial coordinate, $`\boldsymbol{U}\in \mathbb{R}^{n}`$ is the vector of unknowns, $`\boldsymbol{F}`$ is a flux, $`\boldsymbol{A}`$ is a nonlinear matrix function which is typically the Jacobian of a vector function, $`\boldsymbol{B}`$ is a remaining non-conservative matrix, and  $`\boldsymbol{S}`$ is the source term. An alternative form of writting system (1) is the non-conservative compact form:
 ```math
-\dfrac{\partial\boldsymbol{U}}{\partial t}  \,+\, \Big( \partial_{\boldsymbol{U}}\boldsymbol{F}(\boldsymbol{U}) + \boldsymbol{A}(\boldsymbol{U}) - \boldsymbol{B}(\boldsymbol{U}) \Big) \dfrac{\partial \boldsymbol{U}}{\partial x} \,=\,  \boldsymbol{S}(\boldsymbol{U}).\qquad \qquad(2)
+\dfrac{\partial\mathbf{U}}{\partial t}  \,+\, \Big( \partial_{\boldsymbol{U}}\boldsymbol{F}(\boldsymbol{U}) + \boldsymbol{A}(\boldsymbol{U}) - \boldsymbol{B}(\boldsymbol{U}) \Big) \dfrac{\partial \boldsymbol{U}}{\partial x} \,=\,  \boldsymbol{S}(\boldsymbol{U}).\qquad \qquad(2)
 ```
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
 - High-order time approximations for $`\partial_t \boldsymbol{U}`$.
