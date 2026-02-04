@@ -1,5 +1,5 @@
 
-<h1 style="color:teal;">Finite volume solver for shallow water moment solver</h1>
+<h1 style="color:teal;">Finite volume solver for shallow water moment equations</h1>
 
 
 This Github repository contains the source files of a solver written in Fortran90 tailored to approximate a variety of shallow water moment models in one or two spatial dimensions. 
@@ -7,11 +7,11 @@ The development of this software is part of the project HiWAVE - Natural hazard 
 
 The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n`$ equations:
 ```math
-\color{brown}\dfrac{\partial\boldsymbol{U}}{\partial t} \,+\, \dfrac{\partial \boldsymbol{F}}{\partial x}(\boldsymbol{U}) \,+\, \boldsymbol{A}(\boldsymbol{U})\dfrac{\partial \boldsymbol{U}}{\partial x} \,=\, \boldsymbol{B}(\boldsymbol{U})\dfrac{\partial \boldsymbol{U}}{\partial x} \,+\, \boldsymbol{S}(\boldsymbol{U}),\qquad \qquad(1)
+\dfrac{\partial\boldsymbol{U}}{\partial t} \,+\, \dfrac{\partial \boldsymbol{F}}{\partial x}(\boldsymbol{U}) \,+\, \boldsymbol{A}(\boldsymbol{U})\dfrac{\partial \boldsymbol{U}}{\partial x} \,=\, \boldsymbol{B}(\boldsymbol{U})\dfrac{\partial \boldsymbol{U}}{\partial x} \,+\, \boldsymbol{S}(\boldsymbol{U}),\qquad \qquad(1)
 ```
 where $`t>0`$ is time, $`x`$ is the spatial coordinate, $`\boldsymbol{U}\in \mathbb{R}^{n}`$ is the vector of unknowns, $`\boldsymbol{F}`$ is a flux, $`\boldsymbol{A}`$ is a nonlinear matrix function which is typically the Jacobian of a vector function, $`\boldsymbol{B}`$ is a remaining non-conservative matrix, and  $`\boldsymbol{S}`$ is the source term. An alternative form of writting system (1) is the non-conservative compact form:
 ```math
-\color{brown}\dfrac{\partial\boldsymbol{U}}{\partial t}  \,+\, \Big( \partial_{\boldsymbol{U}}\boldsymbol{F}(\boldsymbol{U}) + \boldsymbol{A}(\boldsymbol{U}) - \boldsymbol{B}(\boldsymbol{U}) \Big) \dfrac{\partial \boldsymbol{U}}{\partial x} \,=\,  \boldsymbol{S}(\boldsymbol{U}).\qquad \qquad(2)
+\dfrac{\partial\boldsymbol{U}}{\partial t}  \,+\, \Big( \partial_{\boldsymbol{U}}\boldsymbol{F}(\boldsymbol{U}) + \boldsymbol{A}(\boldsymbol{U}) - \boldsymbol{B}(\boldsymbol{U}) \Big) \dfrac{\partial \boldsymbol{U}}{\partial x} \,=\,  \boldsymbol{S}(\boldsymbol{U}).\qquad \qquad(2)
 ```
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
 - High-order time approximations for $`\partial_t \boldsymbol{U}`$.
